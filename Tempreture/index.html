@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temperature Converter</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Header with Logo and Navigation -->
+<header class="header">
+    <img src="image/logo.jpg" alt="Company Logo" class="logo">
+    <h2>LuNeTiC TecH SoLuTioN</h2>
+    <nav class="header-nav">
+        <a href="#home">HOME</a>
+        <a href="#services">SERVICES</a>
+        <a href="#contact">CONTACT</a>
+    </nav>
+</header>
+
+<!-- Bubble Background -->
+<div class="bubble-background">
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+    <div class="bubble"></div>
+</div>
+
+<!-- Converter Container -->
+<div class="converter-container">
+    <h1>Temperature Converter</h1>
+    <input type="number" id="temperature" class="input-field" placeholder="Enter temperature" required>
+    
+    <select id="unit" class="unit-select">
+        <option value="celsius">Celsius</option>
+        <option value="fahrenheit">Fahrenheit</option>
+        <option value="kelvin">Kelvin</option>
+    </select>
+    
+    <div class="button-group">
+        <button onclick="convertTemperature()" class="convert-btn">Convert</button>
+        <button onclick="clearFields()" class="clear-btn">Clear</button>
+    </div>
+    
+    <div class="result-display">
+        <label id="output-label">Converted Temperature is:</label>
+        <input type="text" id="result" class="output-field" readonly>
+    </div>
+</div>
+
+<!-- Footer with Social Media Links and Contact Information -->
+<footer class="footer">
+    <p>Contact Us: contact@company.com | +123 456 7890</p>
+    <div class="social-media">
+        <a href="#"><img src="image/instagram.png" alt="Instagram Icon"></a>
+        <a href="#"><img src="image/twitter.png" alt="Twitter Icon"></a> 
+        <a href="#"><img src="image/linkedin.png" alt="Linkedin Icon"></a>
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
